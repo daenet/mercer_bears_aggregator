@@ -1,0 +1,16 @@
+# FGraph Facebook Configuration File
+#
+# Register your application to get your app_id and app_secret:
+# http://developers.facebook.com/setup/
+#
+development:
+  app_id:"173230356058847"
+  app_secret:"d2273cacba88b1fa66d6dc4a1c14869e"
+
+test:
+  app_id:
+  app_secret:
+
+production:
+  app_id:
+  app_secret:
