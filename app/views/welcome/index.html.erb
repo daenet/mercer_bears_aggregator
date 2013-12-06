@@ -1,0 +1,26 @@
+<h1 style="text-align: center">All Things Mercer Bears</h1>
+<%= image_tag "bears-header.png" %>
+
+<div id="news">
+  <h1>News about Mercer Bears</h1>
+  <h3>From around the web</h3>
+</div>
+
+<div id="tweets">
+  <% @tweets.each do |tweet| %>
+    <%= link_to image_tag(tweet.user.profile_image_url), "http://twitter.com/#{tweet.user.screen_name}" %><%= tweet.text %><br />
+  <% end %>
+</div>
+
+<div id="instagrams">
+  <% @instagrams.last do |media_item| %>
+      <pre>
+    <%= media_item.inspect %></pre>
+  <% end %>
+</div>
+
+<div id="facebooks">
+  <%# @facebooks.each do |fb| %>
+  <%#= fb["message"] %><br/>
+  <%# end %>
+</div>
